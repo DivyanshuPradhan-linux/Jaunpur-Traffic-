@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <title></title>
+</head>
+
+<body>
+  <h1>
+    <a href='https://postimg.cc/B8Jc8CLz' target='_blank'><img src='https://i.postimg.cc/B8Jc8CLz/13642943980.jpg' border='2' alt='13642943980'/></a>
+  </h1>
+  <div>
+    <p>Please enter Route Name and Vehicle Number for QR code</p>
+    <input type="text" id="routeName" placeholder="Enter Route Name...">
+    <input type="text" id="vehicleNumber" placeholder="Enter Vehicle Number...">
+    <button onclick="generateQrCode()"><b>Generate QR code</b></button>
+  </div>
+  <div id="qrcode"></div>
+  <style>
+    body {
+      background-color: deepskyblue;
+    }
+     * { 
+   box-sizing: border-box; 
+ } 
+ h1 {
+   border-color: #000;
+ }
+  
+ body { 
+   background-color: #fff; 
+   
+   font-family: 'Poppins', sans-s; 
+   display: flex; 
+   flex-direction: column; 
+   align-items: center; 
+   justify-content: center; 
+   height: 100vh; 
+   margin: 10; 
+   background-color: #f9f;
+
+            color: #333;
+
+            background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  background-repeat: no-repeat;
+  background-size: 200vh 100vh;
+ 
+ } 
+  
+ p { 
+   color: #444; 
+   font-size: 2rem; 
+   text-align: cente 
+   opacity: 1.5; 
+   font-family: Bold;
+ } 
+  
+ form { 
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   
+   max-width: 900%; 
+   width: 350px; 
+ } 
+  
+ input { 
+ 
+   
+   background-color: #fff;
+  border-radius: 10px;
+   color: #EF1290; 
+   font-size: 1.2rem; 
+   padding:1rem ; 
+   display: block; 
+   width: 100%; 
+   line-height: 1.5;
+ } 
+  
+ .input::placeholder { 
+  
+   background-color: #FF7DF9; 
+   
+  border-radius: 1px;
+   
+   color: #EF1290; 
+   font-size: 1.2rem; 
+   padding: 1rem ; 
+   display: block; 
+   width: 90%; 
+   border-color:#06CCEF;
+   line-height: 1.5;
+ } 
+  
+ .input:focus { 
+   outline-color: deepskyblue;
+ } 
+  
+ .todos { 
+   background-color: #00E3FF; 
+   padding: 0; 
+   margin: 0; 
+   list-style-type: none; 
+   font-family: "Lucida Console", "Courier New", monospace;
+   color: #EF1290; 
+   line-height: 1.5;
+ } 
+  
+ .todos li { 
+   border-top: 1px solid #e5e5e5; 
+   cursor: pointer; 
+   font-size: 1.25rem; 
+   padding: 1rem 2rem; 
+ } 
+  
+ .todos li.completed { 
+   color: red; 
+   text-decoration: line-through; 
+ } 
+  
+ small { 
+   color: #444; 
+   margin-top: 10rem; 
+   text-align: center; 
+   font-family: cursive;
+   line-height: 1.5;
+ }
+dialog{
+
+  background-color: #fff;
+  font-size: 0.2rem;
+  background-image: linear-gradient(45deg, #FA8BFF 34%, #2BD2FF 52%, #2BFF88 90%);
+  color: #fff;
+  border-color: #f9f;
+  border-width: 2px;
+  font-family: "Lucida Console", "Courier New", monospace;
+ }
+ p1 {
+   font-size: 1.2rem;
+   color: #000;
+   
+ }
+ button {
+   
+    color: #FC03FF;
+    font-family: Bold;
+    line-height: 1;
+    padding: 5px 50px;
+        margin : 40px;
+        cursor: pointer;
+        color: #333;
+
+            background-image: linear-gradient(120deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  background-repeat: no-repeat;
+  background-size: 80vh 20vh;
+ 
+
+  }
+  </style>
+  <body><button onclick="iDialog.showModal()"><b>Developers  Note</b></button>
+
+
+
+
+
+<dialog id="iDialog">
+  <p1>Dear User; </p1><p1>
+            <I>Make sure to Input Correct Details and press back to clear the existing QR</I> </p1>
+  <button onclick="iDialog.close()">I Understand</button>
+</dialog
+></body>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
